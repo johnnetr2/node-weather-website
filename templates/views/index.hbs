@@ -22,6 +22,7 @@
 
     <p id="message-1"></p>
     <p id="message-2"></p>
+     <p id="message-3"></p>
 
 
     <script>
@@ -29,6 +30,7 @@
         const search = document.querySelector('input')
         const messageOne = document.querySelector('#message-1')
         const messageTwo = document.querySelector('#message-2')
+        const messageThree = document.querySelector('#message-3')
 
 
 
@@ -49,6 +51,7 @@
                     } {
                         messageOne.textContent = data[0].location
                         messageTwo.textContent = data[0].forecast
+                        messageThree.textContent = data[0].Temperature
                     }
                 })
             });

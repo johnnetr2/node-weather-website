@@ -65,7 +65,6 @@ app.get('/weather', (req, res) => {
                         ])
                     } else {
                         const { description, currentDegree, precip } = data
-                        console.log(`Currently at ${location}, the weather is ${description} and the current degree is ${currentDegree}. The chance for rain is ${precip}`)
                         res.send([{
                             forecast: description[0],
                             location: location,
