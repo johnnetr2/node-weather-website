@@ -3,3 +3,5 @@ fetch('http://puzzle.mead.io/puzzle').then((response) => {
         console.log(data)
     })
 });
+
+console.log(2);
