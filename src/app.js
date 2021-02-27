@@ -6,6 +6,9 @@ const weather = require('./utils/weather.js')
 
 //Define paths for Express config
 const app = express()
+const port = process.env.PORT || 3000
+
+
 const viewPath = path.join(__dirname, '../templates/views')
 const partialsPath = path.join(__dirname, '../templates/partials')
 hbs.registerPartials(partialsPath)
@@ -98,8 +101,8 @@ app.get('*', (req, res) => {
 })
 
 
-app.listen(3000, () => {
-    console.log('Server is up')
+app.listen(port, () => {
+    console.log('Server is up' + port)
 })
 
 
