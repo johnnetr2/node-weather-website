@@ -6,6 +6,7 @@
 </head>
 
 <body>
+    {{>header}}
 
     <h1>
         empty body
@@ -46,15 +47,15 @@
                     if (data.error) {
                         messageOne.textContent = data.error
                     } {
-                         messageOne.textContent = data[0].location
-                         messageTwo.textContent = data[0].forecast
+                        messageOne.textContent = data[0].location
+                        messageTwo.textContent = data[0].forecast
                     }
                 })
             });
         })
     </script>
 
-
+    {{>footer}}
 </body>
 
 </html>
